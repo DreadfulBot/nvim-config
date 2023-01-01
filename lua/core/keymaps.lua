@@ -1,7 +1,41 @@
 vim.g.mapleader = " "
 local keymap = vim.keymap
 
-keymap.set("i", "jk", "<ESC>")
+-- keymap.set("i", "jk", "<ESC>")
+
+-- russian keymaps keymaps
+-- mode changing
+keymap.set("i", "оо", "<ESC>")
+keymap.set("n", "ш", "i")
+
+-- navigation
+keymap.set("n", "о", "j")
+keymap.set("n", "д", "l")
+keymap.set("n", "р", "h")
+keymap.set("n", "л", "k")
+
+-- line handilng
+keymap.set("n", "щ", "o")
+keymap.set("n", "Щ", "O")
+keymap.set("n", "ф", "a")
+keymap.set("n", "Ф", "A")
+
+-- deletion
+keymap.set("n", "ч", "x")
+keymap.set("n", "Ч", "X")
+keymap.set("n", "в", "d")
+keymap.set("n", "В", "D")
+
+-- copy
+keymap.set("n", "н", "y")
+keymap.set("n", "Н", "Y")
+
+-- words
+keymap.set("n", "ц", "w")
+
+
+
+keymap.set("i", "jj", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "x", '"_x')
 keymap.set("n", "<leader>+", "<C-a>")
