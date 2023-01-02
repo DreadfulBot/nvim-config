@@ -33,8 +33,6 @@ keymap.set("n", "Н", "Y")
 -- words
 keymap.set("n", "ц", "w")
 
-
-
 keymap.set("i", "jj", "<ESC>")
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "x", '"_x')
@@ -45,7 +43,6 @@ keymap.set("n", "<leader>sv", "<C-w>v") -- split window vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- split window horizontally
 keymap.set("n", "<leader>se", "<C-w>=") -- make split, left eq right
 keymap.set("n", "<leader>sx", ":close<CR>") -- close current split window
-
 
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close current tab
