@@ -32,7 +32,7 @@ mason_lspconfig.setup({
 		"eslint",
 		"graphql",
 		"jsonls",
-		"remark_ls",
+		-- "remark_ls",
 		"intelephense",
 		"pyright",
 		"solc",

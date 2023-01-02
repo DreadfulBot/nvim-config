@@ -21,7 +21,7 @@ local keymap = vim.keymap
 -- enable keybinds
 local on_attach = function(client, bufnr)
 	local opts = { noremap = true, silent = true, buffer = bufnr }
-	print(client.name)
+	print("client name is", client.name)
 
 	-- set keybinds
 	keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
@@ -118,10 +118,10 @@ lspconfig["jsonls"].setup({
 	on_attach = on_attach,
 })
 
-lspconfig["remark_ls"].setup({
-	capabilities = capabilities,
-	on_attach = on_attach,
-})
+-- lspconfig["remark_ls"].setup({
+-- 	capabilities = capabilities,
+-- 	on_attach = on_attach,
+-- })
 
 lspconfig["intelephense"].setup({
 	capabilities = capabilities,
