@@ -90,6 +90,8 @@ return require("packer").startup(function(use)
 		end,
 	})
 
+	use("JoosepAlviste/nvim-ts-context-commentstring")
+
 	-- auto closing
 	use("windwp/nvim-autopairs")
 	use("windwp/nvim-ts-autotag")
@@ -100,6 +102,15 @@ return require("packer").startup(function(use)
 	use("preservim/vim-markdown")
 
 	use({ "sindrets/diffview.nvim", requires = "nvim-lua/plenary.nvim" })
+
+	use({
+		"puremourning/vimspector",
+		cmd = { "VimspectorInstall", "VimspectorUpdate" },
+		fn = { "vimspector#Launch()", "vimspector#ToggleBreakpoint", "vimspector#Continue" },
+		config = function()
+			require("config.vimspector").setup()
+		end,
+	})
 
 	-- My plugins here
 	-- use 'foo2/bar2.nvim'

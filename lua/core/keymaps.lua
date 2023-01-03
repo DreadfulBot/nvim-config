@@ -64,5 +64,16 @@ keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>")
 keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<CR>")
 
 -- diffview
-keymap.set("n", "<leader>dfo", "<cmd>DiffviewOpen<CR>")
-keymap.set("n", "<leader>dfc", "<cmd>DiffviewClose<CR>")
+keymap.set("n", "<leader>dvo", "<cmd>DiffviewOpen<CR>")
+keymap.set("n", "<leader>dvc", "<cmd>DiffviewClose<CR>")
+
+-- vimspector
+keymap.set("n", "<leader>vl", ":call vimspector#Launch()<CR>")
+keymap.set("n", "<leader>vg", "<cmd>lua require('plugins.vimspector').generate_debug_profile()<CR>")
+keymap.set("n", "<leader>vr", ":VimspectorReset<CR>")
+keymap.set("n", "<leader>ve", ":VimspectorEval")
+keymap.set("n", "<leader>vw", ":VimspectorWatch")
+keymap.set("n", "<leader>vo", ":VimspectorShowOutput")
+keymap.set("n", "<leader>vi", "<Plug>VimspectorBalloonEval")
+keymap.set("n", "<F10>", "<Plug>VimspectorContinue<CR>")
+keymap.set("n", "<F2>", "<Plug>VimspectorReset<CR>")
