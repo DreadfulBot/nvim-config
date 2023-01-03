@@ -6,13 +6,13 @@
 brew install ripgrep
 ```
 
-## ctags proper works
+## Ctags proper works
 
 ```bash
 brew install ctags
 ```
 
-## markdown plugin
+## Markdown plugin
 
 ```bash
 npm install -g remark
